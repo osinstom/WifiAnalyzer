@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#fbc257"
+        
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/wifi_network" />
+
+        <TextView
+            android:id="@+id/ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+           	android:textStyle="bold"
+            android:textSize="20sp"
+             />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/ssid"
+            android:textSize="16sp"
+             />
+        
+        
+
+    </RelativeLayout> 

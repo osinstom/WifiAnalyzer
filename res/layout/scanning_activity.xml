@@ -3,13 +3,13 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="lan.wifianalyzer.activities.MainActivity"
+    tools:context="lan.wifianalyzer.activities.ScanningActivity"
     tools:ignore="MergeRootFrame" >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/orange_background"
+        android:background="@drawable/background"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
@@ -18,20 +18,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:text="Scanning Results"
             android:textColor="#fbc257"
-            android:textSize="20sp"
-            android:text="LAN WiFi Analyzer" />
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/startScanningBtn"
-            android:layout_width="240dp"
-            android:layout_height="60dp"
+        <ListView
+            android:id="@+id/listview"
             android:layout_marginTop="40dp"
-            android:background="@drawable/button"
-            android:drawableLeft="@drawable/scan_icon"
-            android:paddingLeft="7sp"
-            android:text="Start Scanning" />
-
+            android:layout_width="match_parent"
+            android:dividerHeight="1px"
+            android:layout_height="wrap_content" />
+        
+        
     </LinearLayout>
 
 </FrameLayout>
